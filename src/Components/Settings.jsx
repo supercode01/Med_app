@@ -167,7 +167,7 @@ const Settings = () => {
               <button
                 onClick={() => toggleSwitch("emailNotifications")}
                 className={`relative inline-flex items-center h-6 rounded-full w-14 transition ${
-                  formData.emailNotifications ? "bg-blue-600" : "bg-gray-300"
+                  formData.emailNotifications ? "bg-blue-600" : "bg-gray-300 border border-gray-300"
                 }`}
               >
                 <span
@@ -187,7 +187,7 @@ const Settings = () => {
               <button
                 onClick={() => toggleSwitch("pushNotifications")}
                 className={`relative inline-flex items-center h-6 rounded-full w-14 transition ${
-                  formData.pushNotifications ? "bg-blue-600" : "bg-gray-300"
+                  formData.pushNotifications ? "bg-blue-600" : "bg-gray-300  border border-gray-300"
                 }`}
               >
                 <span

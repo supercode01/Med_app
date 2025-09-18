@@ -43,7 +43,7 @@ const LeftSidebar = ({ onPageChange }) => {
   );
 
   return (
-    <div className="w-64 h-screen bg-white border-r border-gray-200 flex flex-col">
+    <div className="w-64 h-screen bg-white border-r border-gray-200 flex flex-col fixed left-0 top-0">
       {/* Logo Section */}
       <div className="p-4 border-b border-gray-200">
         <div className="flex items-center">

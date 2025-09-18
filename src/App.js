@@ -19,10 +19,10 @@ function App() {
       case "AIChatbot":
         return <AIChatbot />;
       case "Settings":
-        return <Settings /> ;
+        return <Settings />;
       case "HelpSupport":
         return <HelpSupport />;
-      case "ForProfessionals": // ✅ handle professionals page
+      case "ForProfessionals":
         return <ForProfessionals />;
       case "ForPatients":
         return <ForPatients />;
@@ -32,13 +32,17 @@ function App() {
   };
 
   return (
-    <div className="flex h-screen bg-gray-100">
-      {/* Sidebar */}
-      <LeftSidebar onPageChange={setActivePage} />
+    <div className="h-screen bg-gray-100 grid grid-cols-[250px_1fr] grid-rows-[auto_1fr]">
+      
+      <div className="row-span-2">
+        <LeftSidebar onPageChange={setActivePage} />
+      </div>
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col">
+      <div className="col-start-2"> 
         <Header />
+      </div>
+
+      <div className="col-start-2 overflow-auto">
         {renderPage()}
       </div>
     </div>
